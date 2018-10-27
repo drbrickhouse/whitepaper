@@ -2,7 +2,7 @@
 //Stylesheets
 function whitepaper_theme_styles() {
   //Font Awesome
-  wp_enqueue_style('font_awesome', get_template_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css');
+  wp_enqueue_style('font_awesome', 'https://use.fontawesome.com/releases/v5.4.2/css/all.css');
   //Bootstrap
   wp_enqueue_style('boostrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
   //Base CSS
