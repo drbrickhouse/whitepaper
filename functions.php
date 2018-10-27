@@ -1,32 +1,32 @@
 <?php
 //Stylesheets
-function whitespace_theme_styles() {
+function whitepaper_theme_styles() {
   //Font Awesome
   wp_enqueue_style('font_awesome', get_template_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css');
   //Bootstrap
   wp_enqueue_style('boostrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
   //Base CSS
-  wp_enqueue_style('base_css', get_template_directory_uri() . '/css/whitespace_base.css');
+  wp_enqueue_style('base_css', get_template_directory_uri() . '/css/whitepaper_base.css');
   //Main CSS
   wp_enqueue_style('main_css', get_stylesheet_uri());
 }
 
-add_action('wp_enqueue_scripts', 'whitespace_theme_styles');
+add_action('wp_enqueue_scripts', 'whitepaper_theme_styles');
 
 //Javascript
-function whitespace_theme_js() {
+function whitepaper_theme_js() {
   wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true);
 }
 
-add_action('wp_enqueue_scripts', 'whitespace_theme_js');
+add_action('wp_enqueue_scripts', 'whitepaper_theme_js');
 
 //Enable features
-function whitespace_enable_feautres() {
+function whitepaper_enable_feautres() {
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'menus' );
 }
 
-add_action('init', 'whitespace_enable_feautres');
+add_action('init', 'whitepaper_enable_feautres');
 
 
 //Disable Adding Paragraphs
@@ -34,10 +34,10 @@ remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
 //Remove the Read More Dots
-function whitespace_excerpt_more( $more ) {
+function whitepaper_excerpt_more( $more ) {
     return '';
 }
-add_filter( 'excerpt_more', 'whitespace_excerpt_more' );
+add_filter( 'excerpt_more', 'whitepaper_excerpt_more' );
 
 //Navigation Menus
 function register_theme_menus() {
@@ -57,7 +57,7 @@ if(file_exists(get_stylesheet_directory() . '/wp_bootstrap_navwalker.php')) {
 }
 
 //WooCommerce
-function whitespace_woocommerce_setup() {
+function whitepaper_woocommerce_setup() {
   //Declare WooCommerce Support
   add_theme_support( 'woocommerce' );
 
@@ -67,61 +67,61 @@ function whitespace_woocommerce_setup() {
   add_theme_support( 'wc-product-gallery-slider' );
 }
 
-add_action( 'after_setup_theme', 'whitespace_woocommerce_setup' );
+add_action( 'after_setup_theme', 'whitepaper_woocommerce_setup' );
 
-function whitespace_woocommerce_edit_actions() {
+function whitepaper_woocommerce_edit_actions() {
   remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
   remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
   remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 }
 
-add_action( 'after_setup_theme', 'whitespace_woocommerce_edit_actions' );
+add_action( 'after_setup_theme', 'whitepaper_woocommerce_edit_actions' );
 
 //Shortcodes
-function whitespace_shortcode_title(){
+function whitepaper_shortcode_title(){
   return '<?php the_title(); ?>';
 }
 
-function whitespace_shortcode_content(){
+function whitepaper_shortcode_content(){
   return '<?php the_content(); ?>';
 }
 
-function whitespace_shortcode_excerpt(){
+function whitepaper_shortcode_excerpt(){
   return'<?php the_excerpt(); ?>';
 }
 
-function whitespace_shortcode_featured_image(){
+function whitepaper_shortcode_featured_image(){
   return '<?php the_post_thumbnail(); ?>';
 }
 
-function whitespace_shortcode_category(){
+function whitepaper_shortcode_category(){
   return '<?php
   $whitspace_category_post_id = get_the_ID();
   $cats = get_the_category(); ?>
   <a href="<?php echo get_category_link($cats[0]->cat_ID); ?>"><?php echo $cats[0]->name; ?></a>';
 }
 
-function whitespace_shortcode_featured_image_url(){
+function whitepaper_shortcode_featured_image_url(){
   return '<?php the_post_thumbnail_url(); ?>';
 }
 
-function whitespace_shortcode_permalink(){
+function whitepaper_shortcode_permalink(){
   return '<?php the_permalink(); ?>';
 }
 
-function whitespace_shortcode_search_form(){
+function whitepaper_shortcode_search_form(){
   return '<?php get_search_form(); ?>';
 }
 
-function whitespace_shortcode_cta_link(){
+function whitepaper_shortcode_cta_link(){
   return '<?php the_field(link); ?>';
 }
 
-function whitespace_shortcode_cta_icon() {
+function whitepaper_shortcode_cta_icon() {
   return '<i class="fa <?php the_field(font_awesome_icon_class); ?>"></i>';
 }
 
-function whitespace_shortcode_event_start_date($format) {
+function whitepaper_shortcode_event_start_date($format) {
   extract (shortcode_atts(array(
     'dateformat' => 'M jS'
   ), $format));
@@ -131,7 +131,7 @@ function whitespace_shortcode_event_start_date($format) {
   return $output;
 }
 
-function whitespace_shortcode_event_end_date($format) {
+function whitepaper_shortcode_event_end_date($format) {
   extract (shortcode_atts(array(
     'dateformat' => 'M jS'
   ), $format));
@@ -141,7 +141,7 @@ function whitespace_shortcode_event_end_date($format) {
   return $output;
 }
 
-function whitespace_shortcode_event_start_time($format) {
+function whitepaper_shortcode_event_start_time($format) {
   extract (shortcode_atts(array(
     'timeformat' => 'g:i A'
   ), $format));
@@ -153,19 +153,19 @@ function whitespace_shortcode_event_start_time($format) {
 
 
 
-add_shortcode( 'the_title', 'whitespace_shortcode_title' );
-add_shortcode( 'the_content', 'whitespace_shortcode_content' );
-add_shortcode( 'the_excerpt', 'whitespace_shortcode_excerpt' );
-add_shortcode( 'featured_image', 'whitespace_shortcode_featured_image' );
-add_shortcode( 'the_category', 'whitespace_shortcode_category' );
-add_shortcode( 'featured_image_url', 'whitespace_shortcode_featured_image_url' );
-add_shortcode( 'the_permalink', 'whitespace_shortcode_permalink' );
-add_shortcode( 'search_form', 'whitespace_shortcode_search_form' );
-add_shortcode( 'cta_link', 'whitespace_shortcode_cta_link' );
-add_shortcode( 'cta_icon', 'whitespace_shortcode_cta_icon' );
-add_shortcode( 'event_start_date', 'whitespace_shortcode_event_start_date' );
-add_shortcode( 'event_end_date', 'whitespace_shortcode_event_end_date' );
-add_shortcode( 'event_start_time', 'whitespace_shortcode_event_start_time' );
+add_shortcode( 'the_title', 'whitepaper_shortcode_title' );
+add_shortcode( 'the_content', 'whitepaper_shortcode_content' );
+add_shortcode( 'the_excerpt', 'whitepaper_shortcode_excerpt' );
+add_shortcode( 'featured_image', 'whitepaper_shortcode_featured_image' );
+add_shortcode( 'the_category', 'whitepaper_shortcode_category' );
+add_shortcode( 'featured_image_url', 'whitepaper_shortcode_featured_image_url' );
+add_shortcode( 'the_permalink', 'whitepaper_shortcode_permalink' );
+add_shortcode( 'search_form', 'whitepaper_shortcode_search_form' );
+add_shortcode( 'cta_link', 'whitepaper_shortcode_cta_link' );
+add_shortcode( 'cta_icon', 'whitepaper_shortcode_cta_icon' );
+add_shortcode( 'event_start_date', 'whitepaper_shortcode_event_start_date' );
+add_shortcode( 'event_end_date', 'whitepaper_shortcode_event_end_date' );
+add_shortcode( 'event_start_time', 'whitepaper_shortcode_event_start_time' );
 
 //Custom fields
 if(function_exists("register_field_group"))
@@ -545,12 +545,12 @@ if(function_exists("register_field_group"))
 
 
 //Global Variables
-function whitespace_global_variables() {
+function whitepaper_global_variables() {
 	global $post_types;
 	$post_types = get_post_types();
 }
 
-add_action( 'init', 'whitespace_global_variables', 999 );
+add_action( 'init', 'whitepaper_global_variables', 999 );
 
 //Widgets
   //Allow Shortcodes in Widgets
@@ -558,7 +558,7 @@ add_action( 'init', 'whitespace_global_variables', 999 );
   add_filter('widget_text', 'do_shortcode', 101);
   add_filter('widget_custom_html_content', 'do_shortcode');
 
-function whitespace_create_widget($name, $id, $description) {
+function whitepaper_create_widget($name, $id, $description) {
   register_sidebar(array(
     'name' => __($name),
     'id' => $id,
@@ -570,24 +570,24 @@ function whitespace_create_widget($name, $id, $description) {
   ));
 }
 
-whitespace_create_widget('Top Bar', 'top-bar', 'The topmost section of the website, generally used for a phone number or CTA');
-whitespace_create_widget('Masthead', 'masthead', 'An area for widets above the menu');
-whitespace_create_widget('Header A1', 'header-a1', '');
-whitespace_create_widget('Header A2', 'header-a2', '');
-whitespace_create_widget('Header A3', 'header-a3', '');
-whitespace_create_widget('Header B1', 'header-b1', '');
-whitespace_create_widget('Header B2', 'header-b2', '');
-whitespace_create_widget('Header B3', 'header-b3', '');
-whitespace_create_widget('Home 1', 'home-1', 'The first major area on the home page, generally used for a hero image or a slider');
-whitespace_create_widget('Home 2', 'home-2', 'The second major area on the home page, generally used for CTAs');
-whitespace_create_widget('Home 3', 'home-3', 'The third major area on the home page, generally used for a welcome message');
-whitespace_create_widget('Home 4', 'home-4', 'The fourth major area on the home page');
-whitespace_create_widget('Home 5', 'home-5', 'The fifth major area on the home page');
-whitespace_create_widget('Home 6', 'home-6', 'The sixth major area on the home page');
-whitespace_create_widget('Footer A1', 'footer-a1', '');
-whitespace_create_widget('Footer B1', 'footer-b1', '');
-whitespace_create_widget('Footer B2', 'footer-b2', '');
-whitespace_create_widget('Footer B3', 'footer-b3', '');
-whitespace_create_widget('Sidebar A', 'sidebar-a', 'The first of two available sidebars in this theme');
-whitespace_create_widget('Sidebar B', 'sidebar-b', 'The second of two available sidebars in this theme');
+whitepaper_create_widget('Top Bar', 'top-bar', 'The topmost section of the website, generally used for a phone number or CTA');
+whitepaper_create_widget('Masthead', 'masthead', 'An area for widets above the menu');
+whitepaper_create_widget('Header A1', 'header-a1', '');
+whitepaper_create_widget('Header A2', 'header-a2', '');
+whitepaper_create_widget('Header A3', 'header-a3', '');
+whitepaper_create_widget('Header B1', 'header-b1', '');
+whitepaper_create_widget('Header B2', 'header-b2', '');
+whitepaper_create_widget('Header B3', 'header-b3', '');
+whitepaper_create_widget('Home 1', 'home-1', 'The first major area on the home page, generally used for a hero image or a slider');
+whitepaper_create_widget('Home 2', 'home-2', 'The second major area on the home page, generally used for CTAs');
+whitepaper_create_widget('Home 3', 'home-3', 'The third major area on the home page, generally used for a welcome message');
+whitepaper_create_widget('Home 4', 'home-4', 'The fourth major area on the home page');
+whitepaper_create_widget('Home 5', 'home-5', 'The fifth major area on the home page');
+whitepaper_create_widget('Home 6', 'home-6', 'The sixth major area on the home page');
+whitepaper_create_widget('Footer A1', 'footer-a1', '');
+whitepaper_create_widget('Footer B1', 'footer-b1', '');
+whitepaper_create_widget('Footer B2', 'footer-b2', '');
+whitepaper_create_widget('Footer B3', 'footer-b3', '');
+whitepaper_create_widget('Sidebar A', 'sidebar-a', 'The first of two available sidebars in this theme');
+whitepaper_create_widget('Sidebar B', 'sidebar-b', 'The second of two available sidebars in this theme');
 ?>
