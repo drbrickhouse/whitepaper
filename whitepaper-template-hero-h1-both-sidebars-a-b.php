@@ -19,20 +19,20 @@ if ($header_choice == 'default') {
 
 <!--Content-->
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-lg-12">
     <div class="row page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <div class="row page-hero-overlay">
-          <div class="col-md-12 title-bar">
+          <div class="col-lg-12 title-bar">
             <h1 class="page-title"><?php the_title(); ?></h1>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-12">
+  <div class="col-lg-12">
     <div class="row breadcrumbs">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -42,18 +42,18 @@ if ($header_choice == 'default') {
     </div>
   </div>
   <div class="row main-wrapper">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <div class="content-wrapper">
         <div class="row">
-          <div class="col-sm-12 col-md-8 col-md-push-4 col-lg-6 col-lg-push-3">
+          <div class="col-md-12 col-lg-8 col-lg-push-4 col-xl-6 col-xl-push-3">
             <?php if ( have_posts() ) : while( have_posts() ) : the_post();
                  the_content();
             endwhile; endif; ?>
           </div>
-          <div class="col-sm-12 col-md-4 col-md-pull-8 col-lg-3 col-lg-pull-6">
+          <div class="col-md-12 col-lg-4 col-lg-pull-8 col-xl-3 col-xl-pull-6">
             <?php dynamic_sidebar('sidebar-a') ?>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-3">
+          <div class="col-md-12 col-lg-12 col-xl-3">
             <?php dynamic_sidebar('sidebar-b') ?>
           </div>
         </div>

@@ -23,9 +23,9 @@ if ($header_choice == 'default') {
     <div class="page-hero-overlay">
     </div>
   </div>
-  <div class="col-md-12">
+  <div class="col-lg-12">
     <div class="row breadcrumbs">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -35,20 +35,20 @@ if ($header_choice == 'default') {
     </div>
   </div>
   <div class="row main-wrapper">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <div class="row">
-        <div class="col-md-12 title-bar">
+        <div class="col-lg-12 title-bar">
           <h1 class="page-title"><?php the_title(); ?></h1>
         </div>
       </div>
       <div class="content-wrapper">
         <div class="row">
-          <div class="col-xs-12 col-md-8 col-md-push-4">
+          <div class="col-12 col-lg-8 col-lg-push-4">
             <?php if ( have_posts() ) : while( have_posts() ) : the_post();
                  the_content();
             endwhile; endif; ?>
           </div>
-          <div class="col-xs-12 col-md-4 col-md-pull-8">
+          <div class="col-12 col-lg-4 col-lg-pull-8">
             <?php dynamic_sidebar('sidebar-a') ?>
           </div>
         </div>

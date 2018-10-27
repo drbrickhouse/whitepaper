@@ -563,7 +563,7 @@ function whitepaper_create_widget($name, $id, $description) {
     'name' => __($name),
     'id' => $id,
     'description' => __($description),
-    'before_widget' => '<div class="row widget'.' '.$id.' '.'"><div class="col-md-12"><div class="row widget-inner"><div class="col-md-12">',
+    'before_widget' => '<div class="row widget'.' '.$id.' '.'"><div class="col-lg-12"><div class="row widget-inner"><div class="col-lg-12">',
     'after_widget' => '</div></div></div></div>',
     'before_title' => '<h2 class="module-heading">',
     'after_title' => '</h2>'

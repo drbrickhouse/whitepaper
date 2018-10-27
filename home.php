@@ -19,9 +19,9 @@ if ($header_choice == 'default') {
 
 <!--Content-->
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-lg-12">
     <div class="row breadcrumbs">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -31,15 +31,15 @@ if ($header_choice == 'default') {
     </div>
   </div>
   <div class="row main-wrapper">
-    <div class="col-md-12">
+    <div class="col-lg-12">
       <div class="row">
-        <div class="col-md-12 title-bar">
+        <div class="col-lg-12 title-bar">
           <h1 class="page-title"><?php single_post_title(); ?></h1>
         </div>
       </div>
       <div class="content-wrapper">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-lg-12">
             <?php
               $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
               $args = array( 'posts_per_page' => 10, 'orderby' => DESC, 'paged' => $paged);

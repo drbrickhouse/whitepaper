@@ -16,11 +16,11 @@ Template Name: Portfolio Item
       <div class="jumbotron-post">
         <?php
           $size = ('full');
-          $attr = ['class' => "img-responsive"];
+          $attr = ['class' => "img-fluid"];
           the_post_thumbnail($size, $attr);
         ?>
       </div>
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
         <?php endwhile; else : ?>
