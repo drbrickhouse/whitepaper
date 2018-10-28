@@ -26,10 +26,10 @@
             </div>
           </div>
           <div class="row headaer-b">
-            <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
               <?php dynamic_sidebar('header-b1') ?>
             </div>
-            <div class="col-12 col-md-12 col-lg-9 col-xl-9">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
               <?php dynamic_sidebar('header-b2') ?>
             </div>
           </div>

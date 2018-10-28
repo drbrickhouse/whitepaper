@@ -10,10 +10,10 @@
                       <div class="row copyright">
                         <div class="col-lg-12">
                           <div class="row copyright-inner">
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-sm-12 col-lg-6">
                               <p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?> | <a href="/sitemap/" title="sitemap">Sitemap</a></p>
                             </div>
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-sm-12 col-lg-6">
                               <p>Site by: <a href="https://tenpeaksdigital.com/" target="_blank"><img src="<?php echo get_template_directory_uri() . "/images/ten-peaks-logo.png" ?>"></a>
                             </div>
                           </div>
