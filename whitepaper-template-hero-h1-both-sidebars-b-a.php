@@ -45,15 +45,15 @@ if ($header_choice == 'default') {
     <div class="col-lg-12">
       <div class="content-wrapper">
         <div class="row">
-          <div class="col-md-12 col-lg-8 col-lg-push-4 col-xl-6 col-xl-push-3">
+          <div class="col-md-12 col-lg-8 col-xl-6 order-lg-2 order-xl-2">
             <?php if ( have_posts() ) : while( have_posts() ) : the_post();
                  the_content();
             endwhile; endif; ?>
           </div>
-          <div class="col-md-12 col-lg-4 col-lg-pull-8 col-xl-3 col-xl-pull-6">
+          <div class="col-md-12 col-lg-4 col-xl-3 order-lg-1 order-xl-1">
             <?php dynamic_sidebar('sidebar-b') ?>
           </div>
-          <div class="col-md-12 col-lg-12 col-xl-3">
+          <div class="col-md-12 col-lg-12 col-xl-3 order-lg-3 order-xl-3">
             <?php dynamic_sidebar('sidebar-a') ?>
           </div>
         </div>

@@ -21,13 +21,13 @@
             </div>
           </div>
           <div class="row header-b">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 order-lg-1 order-xl-1">
               <?php dynamic_sidebar('header-b1') ?>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-lg-push-6 col-xl-3 col-xl-push-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 order-lg-3 order-xl-3">
               <?php dynamic_sidebar('header-b3') ?>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-lg-pull-3 col-xl-6 col-xl-pull-3">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 order-lg-2 order-xl-2">
               <?php dynamic_sidebar('header-b2') ?>
             </div>
           </div>
