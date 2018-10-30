@@ -34,19 +34,21 @@ if ($header_choice == 'default') {
       </div>
     </div>
   </div>
-  <div class="row main-wrapper">
-    <div class="col-lg-12">
-      <div class="row">
-        <div class="col-lg-12 title-bar">
-          <h1 class="page-title"><?php the_title(); ?></h1>
-        </div>
-      </div>
-      <div class="content-wrapper">
+  <div class="col-lg-12">
+    <div class="row main-wrapper">
+      <div class="col-lg-12">
         <div class="row">
-          <div class="col- 12 col-lg-8 offset-lg-2">
-            <?php if ( have_posts() ) : while( have_posts() ) : the_post();
-                 the_content();
-            endwhile; endif; ?>
+          <div class="col-lg-12 title-bar">
+            <h1 class="page-title"><?php the_title(); ?></h1>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col- 12 col-lg-8 offset-lg-2">
+              <?php if ( have_posts() ) : while( have_posts() ) : the_post();
+                   the_content();
+              endwhile; endif; ?>
+            </div>
           </div>
         </div>
       </div>
