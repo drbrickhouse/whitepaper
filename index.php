@@ -16,7 +16,7 @@ get_header ();
 
 <div class="main-wrapper">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
       <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array( 'posts_per_page' => 10, 'orderby' => DESC, 'paged' => $paged);

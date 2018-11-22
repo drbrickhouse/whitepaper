@@ -13,7 +13,7 @@ Template Name: Archive
 <!--Content-->
 <div class="main-wrapper">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <?php if(get_the_post_thumbnail()) : ?>

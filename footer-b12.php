@@ -1,5 +1,5 @@
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="col-12">
                     <footer>
                       <div class="row footer-b">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -10,7 +10,7 @@
                         </div>
                       </div>
                       <div class="row copyright">
-                        <div class="col-lg-12">
+                        <div class="col-12">
                           <p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?> | <a href="/sitemap/" title="sitemap">Sitemap</a></p>
                         </div>
                       </div>

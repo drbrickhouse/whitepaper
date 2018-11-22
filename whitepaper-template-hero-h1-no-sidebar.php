@@ -19,20 +19,20 @@ if ($header_choice == 'default') {
 
 <!--Content-->
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-12">
     <div class="row page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
-      <div class="col-lg-12">
+      <div class="col-12">
         <div class="row page-hero-overlay">
-          <div class="col-lg-12 title-bar">
+          <div class="col-12 title-bar">
             <h1 class="page-title"><?php the_title(); ?></h1>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-12">
+  <div class="col-12">
     <div class="row breadcrumbs">
-      <div class="col-lg-12">
+      <div class="col-12">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -41,9 +41,9 @@ if ($header_choice == 'default') {
       </div>
     </div>
   </div>
-  <div class="col-lg-12">
+  <div class="col-12">
     <div class="row main-wrapper">
-      <div class="col-lg-12">
+      <div class="col-12">
         <div class="content-wrapper">
           <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
