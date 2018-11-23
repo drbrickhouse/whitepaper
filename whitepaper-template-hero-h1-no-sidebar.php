@@ -23,8 +23,12 @@ if ($header_choice == 'default') {
     <div class="row page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
       <div class="col-12">
         <div class="row page-hero-overlay">
-          <div class="col-12 title-bar">
-            <h1 class="page-title"><?php the_title(); ?></h1>
+          <div class="col-12">
+            <div class="row title-bar">
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <h1 class="page-title"><?php the_title(); ?></h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>

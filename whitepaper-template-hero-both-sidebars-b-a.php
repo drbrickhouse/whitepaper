@@ -37,8 +37,8 @@ if ($header_choice == 'default') {
   <div class="col-12">
     <div class="row main-wrapper">
       <div class="col-12">
-        <div class="row">
-          <div class="col-12 title-bar">
+        <div class="row title-bar">
+          <div class="col-12">
             <h1 class="page-title"><?php the_title(); ?></h1>
           </div>
         </div>
