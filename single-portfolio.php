@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Portfolio Item
-*/
-?>
-
 <!--Header-->
 
 <?php get_header (); ?>

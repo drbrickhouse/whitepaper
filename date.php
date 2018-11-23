@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Index
-*/
-?>
-
 <!--Header-->
 
 <?php
