@@ -19,8 +19,12 @@ if ($header_choice == 'default') {
 
 <!--Content-->
 <div class="row">
-  <div class="page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
-    <div class="page-hero-overlay">
+  <div class="col-12">
+    <div class="row page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+      <div class="col-12">
+        <div class="row page-hero-overlay">
+        </div>
+      </div>
     </div>
   </div>
   <div class="col-12">

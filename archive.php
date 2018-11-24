@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Archive
-*/
-?>
-
 <!--Header-->
 
 <?php get_header (); ?>
