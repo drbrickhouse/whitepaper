@@ -17,10 +17,6 @@ if ($header_choice == 'default') {
 
 <!--End Header-->
 
-
-
-
-
 <!--Content-->
 <?php if( is_active_sidebar('home-1') ) { ?>
   <div class="row home-1-wrapper">
@@ -66,10 +62,6 @@ if ($header_choice == 'default') {
 <?php } ?>
 
 <!--End Content-->
-
-
-
-
 
 <!--Footer-->
 

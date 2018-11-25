@@ -30,17 +30,18 @@ if ($header_choice == 'default') {
       </div>
     </div>
   </div>
-  <div class="row main-wrapper">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-12 title-bar">
-          <h1 class="page-title"><?php single_post_title(); ?></h1>
+  <div class="col-12">
+    <div class="row main-wrapper">
+      <div class="col-12">
+        <div class="row title-bar">
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <h1 class="page-title"><?php single_post_title(); ?></h1>
+          </div>
         </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="row">
-          <div class="col-12">
-            <?php
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <?php
               $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
               $args = array( 'posts_per_page' => 10, 'orderby' => DESC, 'paged' => $paged);
               $temp = $wp_query;
@@ -72,6 +73,7 @@ if ($header_choice == 'default') {
                   $wp_query = $temp;
                    wp_reset_query();
               <?php endif; ?>
+            </div>
           </div>
         </div>
       </div>

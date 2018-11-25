@@ -22,20 +22,19 @@ if ($header_choice == 'default') {
         }
         ?>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
   <div class="col-12">
     <div class="row main-wrapper">
       <div class="col-12">
-        <div class="row">
-          <div class="col-12 title-bar">
+        <div class="row title-bar">
+          <div class="col-12 col-lg-8 offset-lg-2">
             <h1 class="page-title"><?php the_title(); ?></h1>
           </div>
         </div>
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-lg-8 offset-lg-2">
               <?php if ( have_posts() ) : while( have_posts() ) : the_post();
                    the_content();
               endwhile; endif; ?>
