@@ -27,17 +27,9 @@ Template Name: Hero Right Sidebar A
       </div>
     </div>
   </div>
-  <div class="col-12">
-    <div class="row breadcrumbs">
-      <div class="col-12">
-        <?php
-        if ( function_exists('yoast_breadcrumb') ) {
-        yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-        }
-        ?>
-      </div>
-    </div>
-  </div>
+  <!--Breadcrumbs-->
+  <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
+  <!--End Breadcrumbs-->
   <div class="col-12">
     <div class="row main-wrapper">
       <div class="col-12">
