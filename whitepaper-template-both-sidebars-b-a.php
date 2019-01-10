@@ -6,14 +6,7 @@ Template Name: Both Sidebars B-A
 
 <!--Header-->
 
-<?php
-$header_choice = get_field('header');
-if ($header_choice == 'default') {
-  get_header();
-} else {
-  get_header($header_choice);
-}
-?>
+<?php get_template_part( 'templates/pages', 'header' ); ?>
 
 <!--End Header-->
 
@@ -61,13 +54,6 @@ if ($header_choice == 'default') {
 
 <!--Footer-->
 
-<?php
-$footer_choice = get_field('footer');
-if ($header_footer == 'default') {
-  get_footer();
-} else {
-  get_footer($footer_choice);
-}
-?>
+<?php get_template_part( 'templates/pages', 'footer' ); ?>
 
 <!--End Footer-->

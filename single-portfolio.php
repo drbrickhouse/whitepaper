@@ -1,6 +1,6 @@
 <!--Header-->
 
-<?php get_header (); ?>
+<?php get_template_part( 'templates/pages', 'header' ); ?>
 
 <!--End Header-->
 
@@ -53,6 +53,6 @@
 
 <!--Start Footer-->
 
-<?php get_footer(); ?>
+<?php get_template_part( 'templates/pages', 'footer' ); ?>
 
 <!--End Footer-->
