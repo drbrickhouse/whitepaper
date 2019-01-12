@@ -138,6 +138,7 @@ img {
 .row .wp-block-column {
   margin-left: unset!important;
   margin-right: unset!important;
+  margin: unset!important;
 }
 
 @media (min-width: 768px) {
