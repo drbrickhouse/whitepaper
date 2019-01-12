@@ -107,6 +107,10 @@ a img.aligncenter {
 }
 
 /************** Theme CSS ****************/
+img {
+  max-width: 100%;
+}
+
 .clear {
   clear: both;
 }
@@ -129,6 +133,11 @@ a img.aligncenter {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.row .wp-block-column {
+  margin-left: unset!important;
+  margin-right: unset!important;
 }
 
 @media (min-width: 768px) {
