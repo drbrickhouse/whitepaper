@@ -13,9 +13,9 @@ Template Name: Hero Both Sidebars A-B
 <!--Content-->
 <div class="row">
   <div class="col-12">
-    <div class="row page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+    <div class="row" id="page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
       <div class="col-12">
-        <div class="row page-hero-overlay">
+        <div class="row" id="page-hero-overlay">
         </div>
       </div>
     </div>
@@ -24,19 +24,17 @@ Template Name: Hero Both Sidebars A-B
   <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
   <div class="col-12">
-    <div class="row main-wrapper">
+    <div class="row" id="main-wrapper">
       <div class="col-12">
-        <div class="row title-bar">
+        <div class="row" id="title-bar">
           <div class="col-12">
-            <h1 class="page-title"><?php the_title(); ?></h1>
+            <?php get_template_part( 'templates/internal', 'title' ); ?>
           </div>
         </div>
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-12 col-lg-8 col-xl-6 order-lg-2 order-xl-2">
-              <?php if ( have_posts() ) : while( have_posts() ) : the_post();
-                   the_content();
-              endwhile; endif; ?>
+              <?php get_template_part( 'templates/internal', 'loop' ); ?>
             </div>
             <div class="col-md-12 col-lg-4 col-xl-3 order-lg-1 order-xl-1">
               <?php dynamic_sidebar('sidebar-a') ?>

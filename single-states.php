@@ -10,17 +10,17 @@
   <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
   <div class="col-12">
-    <div class="row main-wrapper">
+    <div class="row" id="main-wrapper">
       <div class="col-12">
-        <div class="row title-bar">
+        <div class="row" id="title-bar">
           <div class="col-12 col-lg-8 offset-lg-2">
-            <h1 class="page-title"><?php the_title(); ?></h1>
+            <?php get_template_part( 'templates/internal', 'title' ); ?>
           </div>
         </div>
         <div class="content-wrapper">
           <div class="row">
             <div class="col-lg-8">
-              <div class="row state-description">
+              <div class="row" id="state-description">
                 <div class="col-12">
                   <?php
                   if ( have_posts() ) : while( have_posts() ) : the_post();
@@ -32,12 +32,12 @@
                   ?>
                 </div>
               </div>
-              <div class="row state-issues">
+              <div class="row" id="state-issues">
                 <div class="col-12">
                   <h2><?php the_title(); ?> Legal Issues</h2>
                 </div>
               </div>
-              <div class="row state-lawyers">
+              <div class="row" id="state-lawyers">
                 <div class="col-12">
                   <h2><?php the_title(); ?> Lawyers</h2>
                 </div>

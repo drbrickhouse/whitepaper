@@ -13,9 +13,9 @@ get_header ();
   <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
   <div class="col-12">
-    <div class="row main-wrapper">
+    <div class="row" id="main-wrapper">
       <div class="col-12">
-        <div class="row title-bar">
+        <div class="row" id="title-bar">
           <div class="col-12 col-lg-8 offset-lg-2">
             <h1 class="page-title"><?php the_archive_title(); ?></h1>
           </div>

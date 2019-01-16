@@ -13,19 +13,19 @@
     <!--Site Header-->
 
     <header>
-      <div class="row top">
+      <div class="row" id="top">
         <div class="col-12">
           <div class="row">
             <div class="col-12">
               <?php dynamic_sidebar('top-bar') ?>
             </div>
           </div>
-          <div class="row header-a">
+          <div class="row" id="header-a">
             <div class="col-12">
               <?php dynamic_sidebar('header-a1') ?>
             </div>
           </div>
-          <div class="row header-b">
+          <div class="row" id="header-b">
             <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 order-lg-1 order-xl-1">
               <?php dynamic_sidebar('header-b1') ?>
             </div>
@@ -44,5 +44,5 @@
 
     <div class="row">
       <div class="col-12">
-        <div class="row full-wrapper">
+        <div class="row" id="full-wrapper">
           <div class="col-12">

@@ -1,5 +1,5 @@
 <div class="col-12">
-  <div class="row breadcrumb-wrapper">
+  <div class="row" id="breadcrumb-wrapper">
     <div class="col-12">
       <?php
       if ( function_exists('yoast_breadcrumb') ) {

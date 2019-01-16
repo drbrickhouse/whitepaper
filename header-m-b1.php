@@ -13,9 +13,9 @@
     <!--Site Header-->
 
     <header>
-      <div class="row top">
+      <div class="row" id="top">
         <div class="col-12">
-          <div class="row top-area">
+          <div class="row" id="top-area">
             <div class="col-12">
               <?php dynamic_sidebar('top-bar') ?>
               <?php dynamic_sidebar('masthead') ?>
@@ -34,5 +34,5 @@
 
     <div class="row">
       <div class="col-12">
-        <div class="row full-wrapper">
+        <div class="row" id="full-wrapper">
           <div class="col-12">
