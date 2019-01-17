@@ -4,7 +4,7 @@ function whitepaper_theme_styles() {
   //Font Awesome
   wp_enqueue_style('font_awesome', 'https://use.fontawesome.com/releases/v5.4.2/css/all.css');
   //Bootstrap
-  wp_enqueue_style('boostrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
+  wp_enqueue_style('boostrap_css', get_template_directory_uri() . '/css/vendor/bootstrap.min.css');
   //Base CSS
   wp_enqueue_style('base_css', get_template_directory_uri() . '/css/whitepaper_base.css');
   //Main CSS
@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'whitepaper_theme_styles');
 
 //Javascript
 function whitepaper_theme_js() {
-  wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true);
+  wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array('jquery'), '', true);
 }
 
 add_action('wp_enqueue_scripts', 'whitepaper_theme_js');
