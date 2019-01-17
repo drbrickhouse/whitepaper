@@ -49,13 +49,6 @@ function register_theme_menus() {
 
 add_action('init', 'register_theme_menus');
 
-//Register Custom Navigation Walker
-if(file_exists(get_stylesheet_directory() . '/wp_bootstrap_navwalker.php')) {
-  require_once(get_stylesheet_directory() . '/wp_bootstrap_navwalker.php');
-} else {
-  require_once(get_template_directory() . '/wp_bootstrap_navwalker.php');
-}
-
 //WooCommerce
 function whitepaper_woocommerce_setup() {
   //Declare WooCommerce Support
