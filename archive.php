@@ -1,13 +1,13 @@
 <!--Header-->
 
-<?php get_template_part( 'templates/pages', 'header' ); ?>
+<?php get_template_part( 'template-parts/page/content', 'header' ); ?>
 
 <!--End Header-->
 
 <!--Content-->
 <div class="row">
   <!--Breadcrumbs-->
-  <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
+  <?php get_template_part( 'template-parts/internal/content', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
   <div class="col-12">
     <div class="row" id="main-wrapper">
@@ -51,6 +51,6 @@
 
 <!--Footer-->
 
-<?php get_template_part( 'templates/pages', 'footer' ); ?>
+<?php get_template_part( 'template-parts/page/content', 'footer' ); ?>
 
 <!--End Footer-->

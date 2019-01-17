@@ -6,7 +6,7 @@ Template Name: Hero Right Sidebar B
 
 <!--Header-->
 
-<?php get_template_part( 'templates/pages', 'header' ); ?>
+<?php get_template_part( 'template-parts/page/content', 'header' ); ?>
 
 <!--End Header-->
 
@@ -21,20 +21,20 @@ Template Name: Hero Right Sidebar B
     </div>
   </div>
   <!--Breadcrumbs-->
-  <?php get_template_part( 'templates/internal', 'breadcrumbs' ); ?>
+  <?php get_template_part( 'template-parts/internal/content', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
   <div class="col-12">
     <div class="row" id="main-wrapper">
       <div class="col-12">
         <div class="row" id="title-bar">
           <div class="col-12 col-lg-6 offset-lg-3">
-            <?php get_template_part( 'templates/internal', 'title' ); ?>
+            <?php get_template_part( 'template-parts/internal/content', 'title' ); ?>
           </div>
         </div>
         <div class="content-wrapper">
           <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
-              <?php get_template_part( 'templates/internal', 'loop' ); ?>
+              <?php get_template_part( 'template-parts/internal/content', 'loop' ); ?>
             </div>
             <div class="col-12 col-lg-3">
               <?php dynamic_sidebar('sidebar-b') ?>
@@ -49,6 +49,6 @@ Template Name: Hero Right Sidebar B
 
 <!--Footer-->
 
-<?php get_template_part( 'templates/pages', 'footer' ); ?>
+<?php get_template_part( 'template-parts/page/content', 'footer' ); ?>
 
 <!--End Footer-->
