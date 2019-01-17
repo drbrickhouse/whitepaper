@@ -543,15 +543,6 @@ if(function_exists("register_field_group"))
 	));
 }
 
-
-//Global Variables
-function whitepaper_global_variables() {
-	global $post_types;
-	$post_types = get_post_types();
-}
-
-add_action( 'init', 'whitepaper_global_variables', 999 );
-
 //Widgets
   //Allow Shortcodes in Widgets
   add_filter( 'widget_text', 'shortcode_unautop');
