@@ -142,6 +142,10 @@ img {
 }
 
 @media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+        display: block;
+  }
+
   .navbar-center {
     width: 100%;
     text-align: center;
