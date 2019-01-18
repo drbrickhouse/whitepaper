@@ -1,9 +1,9 @@
 <?php
-function whitespace_theme_customizer( $wp_customize ) {
+function whitepaper_theme_customizer( $wp_customize ) {
 
   //Scripts
   $wp_customize->add_section(
-      'whitespace_scripts',
+      'whitepaper_scripts',
       array(
           'title'     => 'Scripts',
           'priority'  => 200
@@ -12,7 +12,7 @@ function whitespace_theme_customizer( $wp_customize ) {
 
     //Header Scripts
     $wp_customize->add_setting(
-      'whitespace_header_scripts',
+      'whitepaper_header_scripts',
       array(
           'default'    =>  '',
           'transport'  =>  'refresh'
@@ -20,9 +20,9 @@ function whitespace_theme_customizer( $wp_customize ) {
     );
 
     $wp_customize->add_control(
-      'whitespace_header_scripts',
+      'whitepaper_header_scripts',
       array(
-          'section'   => 'whitespace_scripts',
+          'section'   => 'whitepaper_scripts',
           'label'     => 'Custom Header Scripts',
           'description' => 'Add any scripts that you\'d like in the <head> section below.',
           'type'      => 'textarea'
@@ -31,7 +31,7 @@ function whitespace_theme_customizer( $wp_customize ) {
 
   //Footer Scripts
   $wp_customize->add_setting(
-    'whitespace_footer_scripts',
+    'whitepaper_footer_scripts',
     array(
         'default'    =>  '',
         'transport'  =>  'refresh'
@@ -39,9 +39,9 @@ function whitespace_theme_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_control(
-    'whitespace_footer_scripts',
+    'whitepaper_footer_scripts',
     array(
-        'section'   => 'whitespace_scripts',
+        'section'   => 'whitepaper_scripts',
         'label'     => 'Custom Footer Scripts',
         'description' => 'Add any scripts that you\'d like in the footer section below.',
         'type'      => 'textarea'
@@ -50,5 +50,5 @@ function whitespace_theme_customizer( $wp_customize ) {
 
 }
 
-add_action( 'customize_register', 'whitespace_theme_customizer' );
+add_action( 'customize_register', 'whitepaper_theme_customizer' );
 ?>

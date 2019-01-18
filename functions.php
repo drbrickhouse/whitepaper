@@ -23,19 +23,19 @@ function whitepaper_theme_js() {
 
 add_action('wp_enqueue_scripts', 'whitepaper_theme_js');
 
-//Customizer Scripts - Header
-function whitespace_header_scripts() {
-  require_once(get_template_directory() . '/assets/js/header-scripts.php');
+//Custom Scripts
+function whitepaper_header_scripts() {
+  echo get_theme_mod( 'whitepaper_header_scripts' );
 }
 
-add_action('wp_head', 'whitespace_header_scripts');
+add_action('wp_head', 'whitepaper_header_scripts');
 
-//Customizer Scripts - Footer
-function whitespace_footer_scripts() {
-  require_once(get_template_directory() . '/assets/js/footer-scripts.php');
+
+function whitepaper_footer_scripts() {
+  echo get_theme_mod( 'whitepaper_footer_scripts' );
 }
 
-add_action('wp_footer', 'whitespace_footer_scripts');
+add_action('wp_footer', 'whitepaper_footer_scripts');
 
 //Enable features
 function whitepaper_enable_feautres() {
