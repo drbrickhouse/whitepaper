@@ -15,7 +15,7 @@ function whitespace_theme_customizer( $wp_customize ) {
       'whitespace_header_scripts',
       array(
           'default'    =>  '',
-          'transport'  =>  'postMessage'
+          'transport'  =>  'refresh'
       )
     );
 
@@ -34,7 +34,7 @@ function whitespace_theme_customizer( $wp_customize ) {
     'whitespace_footer_scripts',
     array(
         'default'    =>  '',
-        'transport'  =>  'postMessage'
+        'transport'  =>  'refresh'
     )
   );
 
