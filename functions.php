@@ -1,4 +1,7 @@
 <?php
+//Include Theme Cuztomizer Options
+require_once(get_template_directory_uri(). '/admin/customizer.php');
+
 //Stylesheets
 function whitepaper_theme_styles() {
   //Font Awesome
@@ -19,6 +22,20 @@ function whitepaper_theme_js() {
 }
 
 add_action('wp_enqueue_scripts', 'whitepaper_theme_js');
+
+//Customizer Scripts - Header
+function whitespace_header_scripts() {
+  require_once (get_template_directory_uri() . '/assets/js/header-scripts.php');
+}
+
+add_action('wp_head', 'whitespace_header_scripts');
+
+//Customizer Scripts - Footer
+function whitespace_footer_scripts() {
+  require_once (get_template_directory_uri() . '/assets/js/footer-scripts.php');
+}
+
+add_action('wp_footer', 'whitespace_footer_scripts');
 
 //Enable features
 function whitepaper_enable_feautres() {
