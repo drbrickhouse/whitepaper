@@ -8,31 +8,24 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div class="container-fluid">
 
     <!--Site Header-->
 
     <header>
-      <div class="row" id="top">
-        <div class="col-12">
-          <div class="row" id="top-area">
-            <div class="col-12">
-              <?php dynamic_sidebar('top-bar') ?>
-              <?php dynamic_sidebar('masthead') ?>
-            </div>
+      <div class="container-fluid" id="top-area">
+        <?php dynamic_sidebar('top-bar') ?>
+        <?php dynamic_sidebar('masthead') ?>
+      </div>
+      <div class="container-fluid" id="header-a">
+        <?php dynamic_sidebar('header-a1') ?>
+      </div>
+      <div class="container-fluid" id="header-a">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <?php dynamic_sidebar('header-b1') ?>
           </div>
-          <div class="row" id="header-a">
-            <div class="col-12">
-              <?php dynamic_sidebar('header-a1') ?>
-            </div>
-          </div>
-          <div class="row" id="header-b">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-              <?php dynamic_sidebar('header-b1') ?>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-              <?php dynamic_sidebar('header-b2') ?>
-            </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+            <?php dynamic_sidebar('header-b2') ?>
           </div>
         </div>
       </div>
@@ -40,7 +33,4 @@
 
     <!--End Header-->
 
-    <div class="row">
-      <div class="col-12">
-        <div class="row" id="full-wrapper">
-          <div class="col-12">
+    <div id="full-wrapper">

@@ -8,32 +8,20 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div class="container-fluid">
 
     <!--Site Header-->
 
     <header>
-      <div class="row" id="top">
-        <div class="col-12">
-          <div class="row" id="top-area">
-            <div class="col-12">
-              <?php dynamic_sidebar('top-bar') ?>
-              <?php dynamic_sidebar('masthead') ?>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 header-wrapper">
-              <?php dynamic_sidebar('header-a1') ?>
-              <?php dynamic_sidebar('header-b1') ?>
-            </div>
-          </div>
-        </div>
+      <div class="container-fluid" id="top-area">
+        <?php dynamic_sidebar('top-bar') ?>
+        <?php dynamic_sidebar('masthead') ?>
+      </div>
+      <div class="container-fluid" id="header-wrapper">
+        <?php dynamic_sidebar('header-a1') ?>
+        <?php dynamic_sidebar('header-b1') ?>
       </div>
     </header>
 
     <!--End Header-->
 
-    <div class="row">
-      <div class="col-12">
-        <div class="row" id="full-wrapper">
-          <div class="col-12">
+    <div id="full-wrapper">
