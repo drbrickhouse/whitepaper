@@ -12,7 +12,9 @@ Template Name: Home
 
 <!--Content-->
 
+<div class="container-fluid">
 <?php get_template_part( 'template-parts/internal/content', 'loop' ); ?>
+</div>
 
 <!--End Content-->
 
