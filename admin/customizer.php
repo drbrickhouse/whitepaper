@@ -56,6 +56,106 @@ function whitepaper_theme_customizer( $wp_customize ) {
       'priority'  => 20
     )
   );
+    //Default Page Template
+    $wp_customize->add_setting(
+      'whitepaper_default_page_template',
+      array(
+        'default'    =>  'whitepaper-template-no-sidebar.php',
+        'transport'  =>  'refresh'
+      )
+    );
+
+    $templates = wp_get_theme()->get_page_templates();
+
+    $wp_customize->add_control( 'whitepaper_default_page_template', array(
+        'type' => 'select',
+        'section' => 'whitepaper_site_options',
+        'settings' => 'whitepaper_default_page_template',
+        'label' => 'Default Page Template',
+        'description' => 'Choose the default template to be used for all pages',
+        'choices' => $templates
+      )
+    );
+
+    //Default Header Template
+    $wp_customize->add_setting(
+      'whitepaper_default_header_template',
+      array(
+        'default'    =>  'b12',
+        'transport'  =>  'refresh'
+      )
+    );
+
+    $wp_customize->add_control( 'whitepaper_default_header_template', array(
+        'type' => 'select',
+        'section' => 'whitepaper_site_options',
+        'settings' => 'whitepaper_default_header_template',
+        'label' => 'Default Header Template',
+        'description' => 'Choose the default header to be used for all pages',
+        'choices' => array (
+          'a1-b1' => 'A1-B1',
+          'a1-b12' => 'A1-B12',
+          'a1-b123' => 'A1-B123',
+          'a12-b1' => 'A12-B1',
+          'a12-b12' => 'A12-B12',
+          'b1' => 'B1',
+          'b12' => 'B12',
+          'b123' => 'B123',
+					'm-a1-b1' => 'M-A1-B1',
+					'm-a1-b12' => 'M-A1-B12',
+					'm-a1-b123' => 'M-A1-B123',
+					'm-a12-b1' => 'M-A12-B1',
+					'm-a12-b12' => 'M-A12-B12',
+					'm-b1' => 'M-B1',
+					'm-b12' => 'M-B12',
+					'm-b123' => 'M-B1'
+        ),
+      )
+    );
+
+    //Default Footer Template
+    $wp_customize->add_setting(
+      'whitepaper_default_footer_template',
+      array(
+        'default'    =>  'b12',
+        'transport'  =>  'refresh'
+      )
+    );
+
+    $wp_customize->add_control( 'whitepaper_default_footer_template', array(
+        'type' => 'select',
+        'section' => 'whitepaper_site_options',
+        'settings' => 'whitepaper_default_footer_template',
+        'label' => 'Default Footer Template',
+        'description' => 'Choose the default footer to be used for all pages',
+        'choices' => array (
+          'a1-b1' => 'A1-B1',
+          'a1-b2' => 'A1-B2',
+          'a1-b12' => 'A1-B12',
+          'a1-b13' => 'A1-B13',
+          'a1-b23' => 'A1-B23',
+          'a1-b123' => 'A1-B123',
+          'b12' => 'B12'
+        ),
+      )
+    );
+
+    $wp_customize->add_setting(
+      'whitepaper_favicon',
+      array(
+        'default'    =>  '',
+        'transport'  =>  'refresh'
+      )
+    );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'whitepaper_favicon', array(
+          'settings'		=> 'whitepaper_favicon',
+          'section'		=> 'whitepaper_site_options',
+          'label'			=> 'Favicon',
+          'description'	=> 'The icon that appears on your browser tab',
+        )
+      )
+    );
 
     //Sitemap Link
     $wp_customize->add_setting(
