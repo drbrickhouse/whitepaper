@@ -14,7 +14,7 @@ Template Name: Hero H1 Both Sidebars B-A
 
 <main>
   <article>
-    <div class="container-fluid" id="page-hero" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+    <div class="container-fluid" id="page-hero" <?php if (has_post_thumbnail()) { ?>style="background-image: url('<?php the_post_thumbnail_url() ?>')"<?php } ?>>
       <div class="row" id="page-hero-overlay">
         <div class="col-12">
           <div class="row" id="title-bar">
