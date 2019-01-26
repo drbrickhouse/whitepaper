@@ -119,6 +119,14 @@ img {
   margin-bottom: 0px;
 }
 
+.nav-link {
+  display: inline-block;
+}
+
+.dropdown-toggle:after {
+  display: none;
+}
+
 .responsive {
   position: relative;
   padding-bottom: 56.25%;
