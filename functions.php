@@ -18,7 +18,10 @@ add_action('wp_enqueue_scripts', 'whitepaper_theme_styles');
 
 //Javascript
 function whitepaper_theme_js() {
+  //Bootstrap
   wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array('jquery'), '', true);
+  //Base JS
+  wp_enqueue_script('base_js', get_template_directory_uri() . '/assets/js/whitepaper-base.js', array('jquery'), '', true);
 }
 
 add_action('wp_enqueue_scripts', 'whitepaper_theme_js');
