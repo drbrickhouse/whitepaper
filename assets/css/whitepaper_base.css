@@ -163,4 +163,8 @@ img {
     float: none;
     display: inline-block;
   }
+
+  .whitepaper-toggle {
+    display: none;
+  }
 }
