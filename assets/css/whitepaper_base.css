@@ -154,17 +154,7 @@ img {
         display: block;
   }
 
-  .navbar-center {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar-center li {
-    float: none;
-    display: inline-block;
-  }
-
   .whitepaper-toggle {
-    display: none;
+    display: none!important;
   }
 }
