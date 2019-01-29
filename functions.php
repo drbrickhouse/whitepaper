@@ -580,6 +580,7 @@ whitepaper_create_widget('Header A1', 'header-a1', '');
 whitepaper_create_widget('Header A2', 'header-a2', '');
 whitepaper_create_widget('Header A3', 'header-a3', '');
 whitepaper_create_widget('Header B1', 'header-b1', '');
+whitepaper_create_widget('Header B1-1', 'header-b1-1', '');
 whitepaper_create_widget('Header B2', 'header-b2', '');
 whitepaper_create_widget('Header B3', 'header-b3', '');
 whitepaper_create_widget('Footer A1', 'footer-a1', '');
