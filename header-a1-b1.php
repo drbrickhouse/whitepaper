@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=width-device , initial-scale=1.0">
     <title><?php wp_title(); ?></title>
-    <link href="<?php echo get_theme_mod('whitepaper_favicon') ?>" rel="shortcut icon">
+    <?php if(!empty(get_theme_mod('whitepaper_favicon'))) { ?><link href="<?php echo get_theme_mod('whitepaper_favicon') ?>" rel="shortcut icon"><?php } ?>
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
