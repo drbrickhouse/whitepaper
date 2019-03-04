@@ -143,7 +143,7 @@ img {
   height: 100%;
 }
 
-.row .wp-block-column {
+.row>.wp-block-column {
   margin-left: unset!important;
   margin-right: unset!important;
   margin: unset!important;
