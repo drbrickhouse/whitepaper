@@ -1,0 +1,5 @@
+@media (min-width: 600px) {
+  .wp-block-columns.has-1-columns>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
+    flex-basis: 100%!important;
+  }
+}

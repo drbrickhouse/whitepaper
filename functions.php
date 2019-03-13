@@ -16,6 +16,12 @@ function whitepaper_theme_styles() {
 
 add_action('wp_enqueue_scripts', 'whitepaper_theme_styles');
 
+function whitepaper_admin_styles() {
+  wp_enqueue_style('admin_css', get_template_directory_uri() . '/assets/css/admin.css');
+}
+
+add_action('admin_head', 'whitepaper_admin_styles');
+
 //Javascript
 function whitepaper_theme_js() {
   //Bootstrap
@@ -554,6 +560,69 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+  acf_add_local_field_group(array(
+  	'key' => 'group_5c87fc5b17270',
+  	'title' => 'Testimonials',
+  	'fields' => array(
+  		array(
+  			'key' => 'field_5c87fc66deda4',
+  			'label' => 'Reviewer Name',
+  			'name' => 'reviewer_name',
+  			'type' => 'text',
+  			'instructions' => '',
+  			'required' => 0,
+  			'conditional_logic' => 0,
+  			'wrapper' => array(
+  				'width' => '',
+  				'class' => '',
+  				'id' => '',
+  			),
+  			'default_value' => '',
+  			'placeholder' => 'John Doe',
+  			'prepend' => '',
+  			'append' => '',
+  			'maxlength' => '',
+  		),
+  		array(
+  			'key' => 'field_5c87fcb5deda5',
+  			'label' => 'Star Rating',
+  			'name' => 'star_rating',
+  			'type' => 'number',
+  			'instructions' => '',
+  			'required' => 1,
+  			'conditional_logic' => 0,
+  			'wrapper' => array(
+  				'width' => '',
+  				'class' => '',
+  				'id' => '',
+  			),
+  			'default_value' => '',
+  			'placeholder' => '',
+  			'prepend' => '',
+  			'append' => 'Stars',
+  			'min' => 1,
+  			'max' => 5,
+  			'step' => 1,
+  		),
+  	),
+  	'location' => array(
+  		array(
+  			array(
+  				'param' => 'post_type',
+  				'operator' => '==',
+  				'value' => 'testimonials',
+  			),
+  		),
+  	),
+  	'menu_order' => 0,
+  	'position' => 'normal',
+  	'style' => 'default',
+  	'label_placement' => 'top',
+  	'instruction_placement' => 'label',
+  	'hide_on_screen' => '',
+  	'active' => 1,
+  	'description' => '',
+  ));
 }
 
 //Widgets
