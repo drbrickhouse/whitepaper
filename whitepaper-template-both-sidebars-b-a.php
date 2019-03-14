@@ -6,7 +6,7 @@ Template Name: Both Sidebars B-A
 
 <!--Header-->
 
-<?php get_template_part( 'template-parts/page/content', 'header' ); ?>
+<?php get_header(); ?>
 
 <!--End Header-->
 

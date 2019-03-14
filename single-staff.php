@@ -1,6 +1,6 @@
 <!--Header-->
 
-<?php get_template_part( 'template-parts/page/content', 'header' ); ?>
+<?php get_header(); ?>
 
 <!--End Header-->
 
