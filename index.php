@@ -1,8 +1,6 @@
 <!--Header-->
 
-<?php
-get_header ();
-?>
+<?php get_header (); ?>
 
 <!--End Header-->
 
