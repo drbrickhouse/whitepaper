@@ -46,6 +46,6 @@ Template Name: Hero H1 No Sidebar
 
 <!--Footer-->
 
-<?php get_template_part( 'template-parts/page/content', 'footer' ); ?>
+<?php get_footer(); ?>
 
 <!--End Footer-->

@@ -44,6 +44,6 @@ Template Name: Hero Right Sidebar B
 
 <!--Footer-->
 
-<?php get_template_part( 'template-parts/page/content', 'footer' ); ?>
+<?php get_footer(); ?>
 
 <!--End Footer-->
