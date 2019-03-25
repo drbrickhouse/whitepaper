@@ -1,6 +1,6 @@
 <?php
 
-$footer_choice = get_theme_mod('whitepaper_default_footer_template');
+$footer_choice = get_theme_mod('whitepaper_default_footer_template', 'b12');
 
 if( is_plugin_active('advanced-custom-fields/acf.php') ) {
   if ( !empty(get_field('footer')) && get_field('footer') !== 'default' ) {
