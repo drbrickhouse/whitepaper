@@ -302,7 +302,7 @@ if(function_exists("register_field_group"))
 		),
 		'options' => array (
 			'position' => 'normal',
-			'layout' => 'no_box',
+			'layout' => 'default',
 			'hide_on_screen' => array (
 			),
 		),
@@ -338,7 +338,7 @@ if(function_exists("register_field_group"))
 		),
 		'options' => array (
 			'position' => 'normal',
-			'layout' => 'no_box',
+			'layout' => 'default',
 			'hide_on_screen' => array (
 			),
 		),
@@ -508,7 +508,7 @@ if(function_exists("register_field_group"))
 		),
 		'options' => array (
 			'position' => 'normal',
-			'layout' => 'no_box',
+			'layout' => 'default',
 			'hide_on_screen' => array (
 			),
 		),
@@ -518,6 +518,25 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_staff',
 		'title' => 'Staff',
 		'fields' => array (
+      array(
+  			'key' => 'field_5c9cbd405861b',
+  			'label' => 'Position',
+  			'name' => 'staff_position',
+  			'type' => 'text',
+  			'instructions' => '',
+  			'required' => 0,
+  			'conditional_logic' => 0,
+  			'wrapper' => array(
+  				'width' => '',
+  				'class' => '',
+  				'id' => '',
+  			),
+  			'default_value' => '',
+  			'placeholder' => '',
+  			'prepend' => '',
+  			'append' => '',
+  			'maxlength' => '',
+  		),
 			array (
 				'key' => 'field_5a99cbc902e95',
 				'label' => 'Phone Number',
@@ -554,7 +573,7 @@ if(function_exists("register_field_group"))
 		),
 		'options' => array (
 			'position' => 'normal',
-			'layout' => 'no_box',
+			'layout' => 'default',
 			'hide_on_screen' => array (
 			),
 		),
