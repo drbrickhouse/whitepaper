@@ -6,6 +6,8 @@ require_once(get_template_directory() . '/admin/customizer.php');
 function whitepaper_theme_styles() {
   //Font Awesome
   wp_enqueue_style('font_awesome', 'https://use.fontawesome.com/releases/v5.4.2/css/all.css');
+  //Resets
+  wp_enqueue_style('reset_css', get_template_directory_uri() . '/assets/css/whitepaper_resets.css');
   //Bootstrap
   wp_enqueue_style('boostrap_css', get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css');
   //Base CSS
