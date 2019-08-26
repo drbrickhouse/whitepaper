@@ -13,7 +13,9 @@ In order to use many of the most important features of this theme, you must inst
 
 ### Recommended Plugins
 * [Yoast](https://wordpress.org/plugins/wordpress-seo/) - Yoast is a plugin for handling many of the basic SEO edits to your WordPress site. While not absolutely required for the theme to work, WhitePaper utilizes Yoast's breadcrumb function natively, so it his highly recommended if you want to use breadcrumbs.
-* WhiteSpace Plugins - This is a group of plugins that can be found on our Github page. These plugins were designed alongside this theme and include a powerful widgeting system as well as several commonly-used custom post types.
+* [WhitePaper Blocks](https://github.com/drbrickhouse/whitepaper-blocks) - A set of custom Gutenberg blocks built to be used with this theme.
+* [WhitePaper Widgets](https://github.com/drbrickhouse/whitepaper-widgets) - A set of custom widgets built to be used with this theme.
+* [WhitePaper CPTs](https://github.com/drbrickhouse/whitepaper-cpts) - A set of custom post types built to be used with this theme.
 * [Hummingbird](https://wordpress.org/plugins/hummingbird-performance/) - Use this combination caching and file optimization plugin to speed up your site with fine-tuned control.
 * [Redirection](https://wordpress.org/plugins/redirection/) - This is a powerful plugin for managing 301 redirects.
 * [WP Sitemap Page](https://wordpress.org/plugins/wp-sitemap-page/) - This plugin utilizes a shortcode to create a customizable HTML sitemap.
