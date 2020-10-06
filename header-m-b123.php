@@ -18,13 +18,13 @@
       </div>
       <div class="container-fluid" id="header-b">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xl-3 order-lg-1 order-xl-1">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xl-3 order-lg-1 order-xl-1" id="header-b1">
             <?php dynamic_sidebar('header-b1') ?>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xl-3 order-lg-3 order-xl-3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xl-3 order-lg-3 order-xl-3" id="header-b3">
             <?php dynamic_sidebar('header-b3') ?>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xl-3 order-lg-2 order-xl-2">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xl-3 order-lg-2 order-xl-2" id="header-b2">
             <?php dynamic_sidebar('header-b2') ?>
           </div>
         </div>

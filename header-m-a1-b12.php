@@ -21,10 +21,10 @@
       </div>
       <div class="container-fluid" id="header-a">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3" id="header-b1">
             <?php dynamic_sidebar('header-b1') ?>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="header-b2">
             <?php dynamic_sidebar('header-b2') ?>
           </div>
         </div>
