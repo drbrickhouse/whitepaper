@@ -1,4 +1,9 @@
 <?php
+//Ensuring that is_plugin_active() exists
+if ( ! function_exists( 'is_plugin_active' ) ) {
+ require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+}
+
 //Include Theme Cuztomizer Options
 require_once(get_template_directory() . '/admin/customizer.php');
 
