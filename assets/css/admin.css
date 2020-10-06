@@ -1,3 +1,10 @@
+.wp-block-columns.row {
+  margin-left: unset;
+  margin-right: unset;
+}
+.wp-block-column {
+  max-width: unset;
+}
 @media (min-width: 600px) {
   .wp-block-columns.has-1-columns>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
     flex-basis: 100%!important;
