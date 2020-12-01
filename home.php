@@ -15,7 +15,7 @@ Template Name: Blog
   <!--Breadcrumbs-->
   <?php get_template_part( 'template-parts/internal/content', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
-  <div class="col-12">
+  <div class="container-fluid">
     <div class="row" id="main-wrapper">
       <div class="col-12">
         <div class="row" id="title-bar">
