@@ -11,7 +11,7 @@ Template Name: Blog
 <!--End Header-->
 
 <!--Content-->
-<div class="row">
+<main>
   <!--Breadcrumbs-->
   <?php get_template_part( 'template-parts/internal/content', 'breadcrumbs' ); ?>
   <!--End Breadcrumbs-->
@@ -66,7 +66,7 @@ Template Name: Blog
       </div>
     </div>
   </div>
-</div>
+</main>
 <!--End Content-->
 
 <!--Footer-->
