@@ -52,11 +52,13 @@ Template Name: Blog
                   </div>
                 <?php else : ?>
                   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                  <h1>Not Found</h1>
+                  <h1>No Posts Found</h1>
                   </div>
-                  $wp_query = null;
-                  $wp_query = $temp;
-                   wp_reset_query();
+                  <?php
+                    $wp_query = null;
+                    $wp_query = $temp;
+                    wp_reset_query();
+                  ?>
               <?php endif; ?>
             </div>
           </div>
